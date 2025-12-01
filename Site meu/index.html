@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pousada Terra Madre</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo Terra Madre">
+        <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#vantagens">VANTAGENS</a></li>
+                <li><a href="#suites">SUÍTES</a></li>
+                <li><a href="reserva.html">RESERVAS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h1>Terra Madre</h1>
+                <h2>Pousada Ilhabela</h2>
+            </div>
+        </section>
+        <!-- Vantagens -->
+         <h1 class="h1" id="vantagens">Vantagens de reservar pelo nosso site?</h1>
+        <section class="vantagens container">
+            <div class="cards">
+                <article class="card">
+                    <img class="img-card" src="./img/Presente.png" alt="vantagens">
+                    <h2>Vantagens Exclusivas</h2>
+                </article>
+                <article class="card">
+                    <img class="img-card" src="./img/porco.png" alt="preço">
+                    <h2>Melhor Preço</h2>
+                </article>
+                <article class="card">
+                    <img class="img-card" src="./img/calculadora.png" alt="pagamento">
+                    <h2>Pagamentos em 6X</h2>
+                </article>
+            </div>
+        </section>
+        <!-- Suítes -->
+        <h1 class="h1" id="suites">Suítes</h1>
+        <section class="suites">
+            <article class="suite-item">
+                <div class="suite-image">
+                    <img src="./img/suite 1.png" alt="Suíte 1">
+                </div>
+                <div class="suite-content">
+                    <h3>Suíte 1</h3>
+                    <p>Um quarto de hotel minimalista e clean, com cama de casal de cabeceira cinza clara e 
+                        roupas de cama brancas. Uma manta cinza suave e travesseiros azul-claro adicionam 
+                        leve cor ao ambiente. Mesas laterais brancas com luminárias brancas acompanham a cama. 
+                        O quarto não possui quadros, reforçando o estilo simples. À direita há uma escrivaninha 
+                        de madeira com cadeira preta e uma planta ao lado. Cortinas claras filtram a luz, iluminando o piso cinza.
+                    </p>
+                </div>
+            </article>
+            <article class="suite-item">
+                <div class="suite-image">
+                    <img src="./img/suite 2.png" alt="Suíte 2">
+                </div>
+                <div class="suite-content">
+                    <h3>Suíte 2</h3>
+                    <p>Um quarto que apresenta um visual moderno com cama de casal de cabeceira clara e roupas de cama brancas. 
+                        Uma manta vibrante em tons de rosa, laranja e amarelo decora os pés da cama, junto a dois travesseiros 
+                        laranja. Há luminárias laranja sobre mesas laterais brancas. Ao lado direito há uma escrivaninha flutuante 
+                        com cadeira preta e TV na parede. Uma planta grande perto da escrivaninha complementa o ambiente iluminado 
+                        por cortinas claras.
+                    </p>
+                </div>
+            </article>
+            <article class="suite-item">
+                <div class="suite-image">
+                    <img src="./img/suite 3.png" alt="Suíte 3">
+                </div>
+                <div class="suite-content">
+                    <h3>Suíte 3</h3>
+                    <p>Um quarto moderno e bem iluminado, com cama de casal de cabeceira cinza escura e roupas de cama brancas. 
+                        Uma manta colorida em azul, laranja e amarelo adiciona vivacidade ao ambiente. Há duas luminárias laranja 
+                        sobre mesas laterais brancas. A parede exibe um quadro abstrato colorido. À direita, há uma escrivaninha de 
+                        madeira com cadeira preta e uma TV presa na parede.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-contact">
+            <img class="whats" src="./img/Whats.png" alt="whatsapp">
+            <h2 style="color: greenyellow;">(19) 99999-9999</h2>
+        </div>
+        <p>&copy; 2025 Pousada Terra Madre. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        const btn = document.querySelector('.nav-toggle');
+        if(!btn) return;
+        btn.addEventListener('click', () => {
+            const header = btn.closest('header');
+            header.classList.toggle('nav-open');
+        });
+    });
+</script>
+</html>
